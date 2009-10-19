@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Users - Werber</title>
+</head>
+<body>
+{% for user in users %}
+<h2>{{ user.name }}</h2>
+<p>{{ user.ip  }}</p>
+<p>{{ user.size }}</p>
+{% endfor %}
+</body>
+</html>
