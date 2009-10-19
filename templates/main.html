@@ -3,10 +3,15 @@
 <title>Users - Werber</title>
 </head>
 <body>
+<table border="1">
+<tr><th>Username</th><th>IP</th><th>Size</th></tr>
 {% for user in users %}
-<h2>{{ user.name }}</h2>
-<p>{{ user.ip  }}</p>
-<p>{{ user.size }}</p>
+    <tr>
+	<td>{{ user.name }}</td>
+	<td>{{ user.ip  }}</td>
+	<td>{{ user.size }}</td>
+    </tr>
 {% endfor %}
+</table>
 </body>
 </html>
