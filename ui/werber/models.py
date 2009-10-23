@@ -2,9 +2,9 @@ from django.db import models
 from django.contrib import admin
 
 class SquidUser(models.Model):
+	ip = models.IPAddressField(unique=True)
 	name = models.CharField(max_length=64)
-	ip = models.CharField(max_length=16, unique=True)
-	enabled = models.BooleanField(default=True)
+	enabled = models.BooleanField(default=False)
 	size = models.IntegerField(default=0)
 
 
