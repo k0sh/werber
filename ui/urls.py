@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Example:
-    (r'^werber/', include('mysite.werber.urls')),
+    (r'^werber/', include('ui.werber.urls')),
 
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 

@@ -1,6 +1,6 @@
 from django.template import loader, Context
 from django.http import HttpResponse
-from mysite.werber.models import SquidUser
+from ui.werber.models import SquidUser
 
 def squidusers(request):
 	users = SquidUser.objects.all()
